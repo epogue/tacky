@@ -1,0 +1,27 @@
+{
+  "name": "tacky",
+  "version": "0.0.1",
+  "description": "A library for sticking objects on scroll",
+  "main": "tacky.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epogue/tacky.git"
+  },
+  "keywords": [
+    "sticky",
+    "stuck",
+    "scroll"
+  ],
+  "author": "Elliott Pogue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epogue/tacky/issues"
+  },
+  "homepage": "https://github.com/epogue/tacky#readme"
+}

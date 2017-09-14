@@ -6,7 +6,7 @@
       tackedClass: 'tacked',
       wrapperTag: 'div',
       wrapperClass: 'tacky-wrapper',
-      tackyFn: function(offsetY, tacked) {
+      handler: function(offsetY, tacked) {
         return offsetY <= 0;
       }
     }, opts);
@@ -34,9 +34,9 @@
     window.requestAnimationFrame(() => {
       this._boundingRect = this.wrapperEl.getBoundingClientRect();
       if (this.tacked) {
-        !this.opts.tackyFn(this._boundingRect.top, this.tacked) && this.untack();
+        !this.opts.handler(this._boundingRect.top, this.tacked) && this.untack();
       } else {
-        this.opts.tackyFn(this._boundingRect.top, this.tacked) && this.tack();
+        this.opts.handler(this._boundingRect.top, this.tacked) && this.tack();
       }
     });
   }

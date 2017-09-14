@@ -6,7 +6,7 @@
       tackedClass: 'tacked',
       wrapperTag: 'div',
       wrapperClass: 'tacky-wrapper',
-      handler: function(offsetY, tacked) {
+      handler: function(offsetY /*, tacked */) {
         return offsetY <= 0;
       }
     }, opts);

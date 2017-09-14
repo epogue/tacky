@@ -7,7 +7,14 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"    
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -23,5 +30,10 @@
   "bugs": {
     "url": "https://github.com/epogue/tacky/issues"
   },
-  "homepage": "https://github.com/epogue/tacky#readme"
+  "homepage": "https://github.com/epogue/tacky#readme",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.1.3",
+    "prettier": "^1.7.0"
+  }
 }

@@ -27,7 +27,7 @@
   }
 
   Tacky.prototype.destroy = function() {
-    window.removeEventListener('scroll', this.toggleTacked.bind(this));    
+    window.removeEventListener('scroll', this.toggleTacked.bind(this));
   }
 
   Tacky.prototype.toggleTacked = function() {
